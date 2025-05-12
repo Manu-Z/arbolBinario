@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.arbol.arbolbinario.ViewController.ArbolContoller">
+   <children>
+      <SplitPane prefHeight="500.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="129.0" layoutY="7.0" text="ARBOL BINARIO " />
+                  <Separator layoutY="33.0" prefHeight="2.0" prefWidth="598.0" />
+                  <Label layoutX="14.0" layoutY="337.0" text="Crear arbol: ">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtIngesarValor" layoutX="108.0" layoutY="365.0" prefHeight="25.0" prefWidth="106.0" />
+                  <Label layoutX="14.0" layoutY="369.0" text="Ingrese el valor: " />
+                  <Button fx:id="btnAgregar" layoutX="195.0" layoutY="412.0" mnemonicParsing="false" onAction="#OnAgregar" text="Agregar Nodo " />
+                  <Button fx:id="btnEliminar" layoutX="56.0" layoutY="412.0" mnemonicParsing="false" onAction="#Oneliminar" text="Eliminar Nodo" />
+                  <Label layoutX="352.0" layoutY="40.0" text="Recorrido:">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnInorden" layoutX="355.0" layoutY="77.0" mnemonicParsing="false" onAction="#OnbtnInorden" text="InOrden" />
+                  <Button fx:id="btnPreorden" layoutX="434.0" layoutY="77.0" mnemonicParsing="false" onAction="#Onpreorden" text="PreOrden" />
+                  <Button fx:id="btnPosOrden" layoutX="519.0" layoutY="77.0" mnemonicParsing="false" onAction="#OnposOrden" text="PosOrden" />
+                  <TextArea fx:id="textareaRecorrido" layoutX="355.0" layoutY="111.0" prefHeight="72.0" prefWidth="237.0" />
+                  <Separator layoutX="337.0" layoutY="33.0" orientation="VERTICAL" prefHeight="466.0" prefWidth="11.0" />
+                  <Label layoutX="351.0" layoutY="199.0" prefHeight="25.0" prefWidth="125.0" text="Datos del arbol: ">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="353.0" layoutY="241.0" text="Altura del arbol:" />
+                  <Label layoutX="355.0" layoutY="273.0" text="Peso del arbol :" />
+                  <Label layoutX="363.0" layoutY="308.0" text="Contar Hojas: " />
+                  <Label layoutX="395.0" layoutY="346.0" text="Menor: " />
+                  <Label layoutX="396.0" layoutY="377.0" text="Mayor: " />
+                  <TextField fx:id="txtAltura" layoutX="459.0" layoutY="237.0" prefHeight="25.0" prefWidth="85.0" />
+                  <TextField fx:id="txtPeso" layoutX="459.0" layoutY="270.0" prefHeight="25.0" prefWidth="85.0" />
+                  <TextField fx:id="txtMayor" layoutX="459.0" layoutY="370.0" prefHeight="25.0" prefWidth="85.0" />
+                  <TextField fx:id="txtMenor" layoutX="459.0" layoutY="339.0" prefHeight="25.0" prefWidth="85.0" />
+                  <TextField fx:id="txtnumHojas" layoutX="459.0" layoutY="304.0" prefHeight="25.0" prefWidth="85.0" />
+                  <AnchorPane fx:id="paneArbol" layoutX="11.0" layoutY="35.0" prefHeight="278.0" prefWidth="327.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
